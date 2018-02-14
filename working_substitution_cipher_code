@@ -22,17 +22,26 @@ def decrypt(message):
 
 
 
-unencrypted_message = "I love to get out of school. I hate this coding project even if it cool."
-encrypted_message = encrypt(unencrypted_message)
-decrypted_message = decrypt(encrypted_message) 
+unencrypted_message_1 = "This is really cool, like coding."
+encrypted_message_1 = encrypt(unencrypted_message_1)
+decrypted_message_1 = decrypt(encrypted_message_1) 
+unencrypted_message_2 = "This is another example that my code works. I am ready to turn this assignment in after this works."
+encrypted_message_2 = encrypt(unencrypted_message_2)
+decrypted_message_2 = decrypt(encrypted_message_2) 
 
+print(unencrypted_message_1)
+print(encrypted_message_1)
+print(decrypted_message_1)
 
-print(unencrypted_message)
-print(encrypted_message)
-print(decrypted_message) 
+print(unencrypted_message_2)
+print(encrypted_message_2)
+print(decrypted_message_2) 
 
 with open('substitution_sample_run.txt', 'w') as f:
-    f.write(encrypted_message + "\n")
-    f.write(unencrypted_message + "\n")
-    f.write(decrypted_message + "\n") 
-    
+    f.write(encrypted_message_1 + "\n")
+    f.write(unencrypted_message_1 + "\n")
+    f.write(decrypted_message_1 + "\n")
+    f.write("\n")
+    f.write(encrypted_message_2 + "\n")
+    f.write(unencrypted_message_2 + "\n")
+    f.write(decrypted_message_2 + "\n") 
